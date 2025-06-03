@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rani's News Digest - June 3, 2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            color: #333;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #b30059;
+            text-align: center;
+        }
+        a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .summary {
+            background-color: #fff8f0;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-left: 6px solid #ff6600;
+        }
+        .category {
+            margin-bottom: 30px;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #2d6cdf;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>📰 Welcome to Rani's News Digest</h1>
+    <div class="summary">
+        <p>This daily page brings you 20 of the most relevant and fascinating updates from the worlds of AI, Health, Tech, and Indian local stories. Curated to be both inspiring and practical — for thinkers, learners, and creators.</p>
+        <p><strong>Date:</strong> June 3, 2025</p>
+        <a href="#digest"><strong>📖 Jump to today's full news digest</strong></a>
+        <button onclick="readNews()">🔊 Read Aloud</button>
+    </div>
+
+    <div id="digest">
+        <h2>🌟 Rani’s News Digest – June 3, 2025</h2>
+
+        <div class="category">
+            <h3>🧠 AI & Machine Learning</h3>
+            <ul>
+                <li>India Emerges as Largest ChatGPT User Base: <a href="https://www.businesstoday.in/amp/tech-today/emerging/story/india-is-the-largest-user-of-chatgpt-global-ai-job-shake-up-could-soon-follow-says-report-478764-2025-06-03?utm_source=chatgpt.com">Read more</a></li>
+                <li>OpenAI Grants $150,000 to Indian Nonprofits: <a href="https://startupnews.fyi/2025/06/03/openai-announces-150000-in-grants-to-11-indian-nonprofits-for-social-innovation/?utm_source=chatgpt.com">Read more</a></li>
+                <li>Japan to Establish AI Strategy Task Force: <a href="https://www.nippon.com/en/news/yjj2025060200970/?utm_source=chatgpt.com">Read more</a></li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h3>🏥 Health & Wellness</h3>
+            <ul>
+                <li>COVID-19 Cases in India Cross 4,000 Mark: <a href="https://indianexpress.com/article/india/covid-19-cases-in-india-live-updates-health-ministry-govt-tally-kerala-delhi-surge-variant-10045197/?utm_source=chatgpt.com">Read more</a></li>
+                <li>Mental Health Insurance Awareness Rises: <a href="https://www.tribuneindia.com/news/business/mental-health-insurance-what-you-should-know-in-2025/?utm_source=chatgpt.com">Read more</a></li>
+                <li>COVID-19 Deaths and New Variant Tracking: <a href="https://www.thehealthsite.com/news/covid-19-cases-in-india-live-updates-june-3-track-daily-active-coronavirus-cases-death-status-kerala-maharashtra-tn-delhi-ncr-mumbai-bangalore-city-wise-list-new-covid-variant-symptoms-1225508/?utm_source=chatgpt.com">Read more</a></li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h3>💻 Technology Buzz</h3>
+            <ul>
+                <li>India Leads Global Visa System Revolution: <a href="https://www.travelandtourworld.com/news/article/india-leads-global-visa-system-revolution-with-skylanes-groundbreaking-ai-powered-automation-transforming-government-processes-worldwide/?utm_source=chatgpt.com">Read more</a></li>
+                <li>TechGig Launches 'Leaders' Circle': <a href="https://timesofindia.indiatimes.com/business/india-business/techgig-launches-leaders-circle-to-bridge-the-gap-between-indias-developer-community-and-tech-industry-visionaries/articleshow/121594100.cms?utm_source=chatgpt.com">Read more</a></li>
+                <li>Strategic Investments in Next-Gen AI: <a href="https://startupnews.fyi/2025/06/03/ai-innovation-with-strategic-investment-in-next-gen-technologies/?utm_source=chatgpt.com">Read more</a></li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h3>🇮🇳 India & Local Highlights</h3>
+            <ul>
+                <li>Chain Snatcher Arrested in Hyderabad: <a href="https://munsifdaily.com/chain-snatcher-arrested-in-hyderabad/?utm_source=chatgpt.com">Read more</a></li>
+                <li>Miss World Mourns Hyderabad Fire Victims: <a href="https://www.thestatesman.com/india/miss-world-mourns-hyd-fire-victims-with-heartfelt-note-1503440962.html?utm_source=chatgpt.com">Read more</a></li>
+                <li>Restaurants in Hyderabad Deny Free Water: <a href="https://ground.news/article/restaurants-in-hyderabad-deny-free-drinking-water?utm_source=chatgpt.com">Read more</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function readNews() {
+            const text = document.getElementById('digest').innerText;
+            const msg = new SpeechSynthesisUtterance(text);
+            window.speechSynthesis.speak(msg);
+        }
+    </script>
+
+    <p style="text-align:center"><em>💋 Powered by Rani, your digital companion. Curated by Sesh.</em></p>
+</body>
+</html>
